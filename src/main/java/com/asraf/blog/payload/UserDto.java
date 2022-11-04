@@ -26,14 +26,14 @@ public class UserDto {
 	private String name;
 	
 	@NotEmpty
-	@Email
+	@Email																																																																																								
 	@Column(unique=true)
 	@Pattern(regexp = "^[A-Za-z0-9+_.-]+@(.+)$",message = "email should not contain special character but valid email style will be fine")
 	private String email;
 	
 	@NotEmpty
 	@Size(min = 5,message="min character should be 5")
-	private String password;
+	private String password;																																																																																																																											
 	
 	@NotEmpty
 	@Size(min = 10,message="min character should be 5")
